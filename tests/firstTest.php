@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 
-final class firstTests extends TestCase
+final class firstTest extends TestCase
 {
     public function testCanEcho(): void
     {

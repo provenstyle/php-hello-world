@@ -5,7 +5,7 @@ namespace tests {
     use PHPUnit\Framework\TestCase;
     use App\Color;
 
-    final class colorTests extends TestCase
+    final class colorTest extends TestCase
     {
         public function testCanInstantiate(): void
         {
