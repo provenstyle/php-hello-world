@@ -7,10 +7,19 @@ namespace tests {
 
     final class colorTest extends TestCase
     {
+        private string $colorName = 'Red';
+
         public function testCanInstantiate(): void
         {
-            $target = new Color();
+            $target = new Color($this->colorName);
             $this->assertNotNull($target);
+        }
+
+        public function testCanGetAndSetName(): void
+        {
+            $target = new Color($this->colorName);
+            $this->assertSame($this->colorName, $target->getName());
+            $this->assertSame($this->colorName, $target->name);
         }
     }
 

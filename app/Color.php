@@ -4,7 +4,12 @@ namespace App {
 
     class Color
     {
-        private string $name;
+        public string $name;
+
+        public function __construct(string $name)
+        {
+            $this->name = $name;
+        }
 
         function getName():string {
             return $this->name;
